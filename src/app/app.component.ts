@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'youtube-angular';
+  userInput = "";
+
+  onReceiveNewSearch($event: string) {
+    this.userInput = $event
+ }
 }

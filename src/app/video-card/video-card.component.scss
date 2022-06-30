@@ -1,0 +1,40 @@
+
+
+h2 {
+  color: white;
+}
+
+p {
+  color : white;
+}
+.video-header {
+  border-radius: 10px;
+  width: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.video-preview {
+  border-radius: 10px 10px 0 0;
+  background-position: center;
+  height: 200px;
+  width: 400px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.block {
+  padding: 0 20px;
+}
+.video-in-live {
+  background-color: red;
+  width: 100px;
+
+}
+
+.video-in-live p {
+  color: white;
+  font-weight: bold;
+}

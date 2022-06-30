@@ -1,0 +1,12 @@
+<div class="block">
+
+      <img class="video-preview" src={{video.preview}}>
+      <h2 classe ="video-title"> {{video.title}}  </h2>
+      <p classe="video-autors"> {{video.name}}</p>
+      <div>
+      <!-- <p [ngStyle]="{color: video.spectators >= 500000 ? 'green' : 'blue'}">  {{video.spectators}}</p> </div> -->
+      <p [ngStyle]="video.spectators < 10000 ? { color:'green' } : video.spectators < 500000 ? {color: 'blue'} : {color: 'red'}">{{video.spectators}}</p>
+      <div class="video-in-live"> <p *ngIf="video.isLive === true"> EN DIRECT  </p> </div>
+</div>
+
+
